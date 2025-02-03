@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fundo da página */
+html,
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a tabela */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    padding: 12px 16px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+.table th {
+    background-color: #adf397;
+    font-weight: bold;
+}
+
+.table td input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #eb9393;
+}
+
+/* Resultado de peso perdido/ganho */
+.result {
+    margin-top: 20px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2e7d32;
+}
+
+/* Botão de reset */
+#reset-btn {
+    background-color: #d32f2f;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#reset-btn:hover {
+    background-color: #b71c1c;
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .table th,
+    .table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .total {
+        font-size: 1rem;
+    }
+
+    #reset-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .table th,
+    .table td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    /* Ajustando a altura das células das colunas de calorias */
+    .table th:nth-child(2),
+    .table td:nth-child(2),
+    .table th:nth-child(3),
+    .table td:nth-child(3) {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .table th,
+    .table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    /* Ajustando a altura das células das colunas de calorias */
+    .table th:nth-child(2),
+    .table td:nth-child(2),
+    .table th:nth-child(3),
+    .table td:nth-child(3) {
+        height: 30px;
+        width: 80px;
+    }
+
+    .table td input {
+        width: 100%;
+        font-size: 12px;
+        text-align: right;
+    }
+}
+
+/* Cor de texto dinâmica para os campos de déficit e peso */
+.deficit-positive {
+    color: red;
+}
+
+.deficit-negative {
+    color: green;
+}
+
+.deficit-zero {
+    color: black;
+}
+
+.peso-positive {
+    color: red;
+}
+
+.peso-negative {
+    color: green;
+}
+
+.peso-zero {
+    color: black;
+}

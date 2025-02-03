@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Calórico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle Calórico Mensal</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Calorias Queimadas</th>
+                    <th>Calorias Ingeridas</th>
+                    <th>Déficit<br>Excedente</th>
+                    <th>Peso (Kg)</th>
+                </tr>
+            </thead>
+            <tbody id="days-table">
+            </tbody>
+        </table>
+
+        <div class="result">
+            <p>Total de Peso Perdido/Ganho: <span id="total-weight" class="total">0.0 Kg</span></p>
+        </div>
+
+        <button id="reset-btn" onclick="resetarDados()">Apagar Dados</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
