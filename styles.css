@@ -178,3 +178,28 @@ h1 {
 .peso-zero {
     color: black;
 }
+
+/* Rodape */
+p {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.instagram-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-icon {
+    width: 30px; 
+    height: 30px; 
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #af4b3e;
+    font-size: 16px;
+}
